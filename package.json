@@ -1,28 +1,25 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
-  "description": "MERN E-Commerce App",
+  "description": "Shopping E-commerce app",
   "main": "server.js",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "express": "^4.17.1",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.5.0",
-    "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^5.2.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akshyaprakash/e-commerce.git"
   },
-  "author": "Akshaya",
+  "author": "Akshaya Prakash",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/akshyaprakash/e-commerce/issues"
   },
-  "homepage": "https://github.com/akshyaprakash/e-commerce#readme"
+  "homepage": "https://github.com/akshyaprakash/e-commerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
